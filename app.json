@@ -1,0 +1,35 @@
+{
+    "name": "4st 𝗨𝗦𝗘𝗥𝗕𝗢𝗧",
+    "logo": "https://graph.org/file/c6a2ed96648fd03377dc9.jpg",
+    "description": "An first Telegram Userbot with multi Clients for Spamming or Mass.",
+    "keywords": ["pyrogram", "userbot"],
+    "repository": "https://github.com/itzshukla/STRANGER-USERBOT2.0",
+  "stack": "container",
+    "env": {
+        "STRING_SESSION1": {
+            "description": "fill with the telethon session string",
+            "required": true
+        },
+        "MONGO_URL": {
+            "description": "Fill there an mongo database from mongodb.com",
+            "required": true,
+            "value": "mongodb+srv://Krishna:pss968048@cluster0.4rfuzro.mongodb.net/?retryWrites=true&w=majority"
+        },
+        "SUDO_USERS": {
+            "description": "don't Change this there /id",
+            "required": true,
+            "value": "6428719458"
+        },
+        "OWNER_ID": {
+            "description": "Fill there your I'd",
+            "required": true,
+            "value": "6428719458"
+        },
+        "BOT_TOKEN": {
+            "description": "fill with your bot token get from @BotFather on telegram",
+            "required": true,
+            "value": ""
+        }
+
+    }
+  }
