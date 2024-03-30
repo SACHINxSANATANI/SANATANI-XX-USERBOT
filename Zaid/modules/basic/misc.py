@@ -11,24 +11,24 @@ from Zaid.helper.PyroHelpers import ReplyCheck
 from Zaid.modules.help import add_command_help
 from Zaid.modules.bot.inline import get_readable_time
 
-alive_logo = ALIVE_PIC or "https://telegra.ph/file/f5b0e7f2bd95153968e87.jpg"
+alive_logo = ALIVE_PIC or "https://telegra.ph/file/d1ad21c212a7758d56cdf.jpg"
 
 if ALIVE_TEXT:
    txt = ALIVE_TEXT
 else:
     txt = (
-        f"** 👻_ #_4sᴛ 𝐎ғғɪᴄɪᴀʟ_💘 **\n\n"
-        f"❏ **𝐕ᴇʀsɪᴏɴ**: `2.1`\n"
-        f"├• **𝐔ᴘᴛɪᴍᴇ**: `{str(datetime.now() - START_TIME).split('.')[0]}`\n"
-        f"├• **𝐏ʏᴛʜᴏɴ**: `{python_version()}`\n"
-        f"├• **𝐏ʏʀᴏɢʀᴀᴍ**: `{__version__}`\n"
-        f"├• **𝐒ᴜᴘᴘᴏʀᴛ-𝐂ʜᴀᴛ**: [𝐂ʜᴀᴛ 𝐆ʀᴘ(つ .•́ _ʖ •̀.)つ](t.me/II_4ST_FIGHTER_ll)\n"
-        f"├• **𝐔ᴘᴅᴀᴛᴇs**: [4sᴛ 𝐎ғғɪᴄɪᴀʟ](t.me/I_M_FIGHTER)\n"
-        f"└• **𝐒ɪʀ**: [𝐌ɪɴᴅ𝐆ᴀᴍᴇʀ](t.me/ll4st_MIND_GAMERII)"        
+        f"** 𝗦𝝙𝗡𝝙𝗧𝝙𝗡𝗜 || 𝗦𝗣𝝙𝗠​ **\n\n"
+        f"❏ **ᴠᴇʀsɪᴏɴ**: `2.1`\n"
+        f"├• **ᴜᴘᴛɪᴍᴇ**: `{str(datetime.now() - START_TIME).split('.')[0]}`\n"
+        f"├• **ᴘʏᴛʜᴏɴ**: `{python_version()}`\n"
+        f"├• **ᴘʏʀᴏɢʀᴀᴍ**: `{__version__}`\n"
+        f"├• **sᴜᴘᴘᴏʀᴛ-ᴄʜᴀᴛ**: [4sᴛ ғɪɢʜᴛᴇʀ](t.me/Il_4ST_FIGHTER_ll)\n"
+        f"├• **ᴜᴘᴅᴀᴛᴇs**: [🇸ᴀ ɴ ᴀ ᴛ ᴀ ɴ ɪ ₰](t.me/ALL_SANATANI_BOT)\n"
+        f"└• **sɪʀ**: [sᴀᴄʜɪɴ](t.me/V_VIP_OWNER)"        
     )
 
 @Client.on_message(
-    filters.command(["alive", "shivop"], ".") & (filters.me | filters.user(SUDO_USER))
+    filters.command(["alive", "sachin"], ".") & (filters.me | filters.user(SUDO_USER))
 )
 async def alive(client: Client, message: Message):
     xx = await message.reply_text("⚡️")
@@ -51,18 +51,18 @@ async def alive(client: Client, message: Message):
     except BaseException:
         await xx.edit(xd, disable_web_page_preview=True)
 
-@Client.on_message(filters.command("repo", ".") & filters.me)
+@Client.on_message(filters.command("ISISISISISrepo", ".") & filters.me)
 async def repo(bot: Client, message: Message):
     await message.edit("⚡, 💘, ❄, ✨")
     await asyncio.sleep(1)
     await message.edit("Fetching Source Code.....")
     await asyncio.sleep(1)
-    await message.edit("Here is repo: \n\n\nhttps://github.com/itzshukla/STRANGER-USERBOT2.0\nFork & Give an ⭐")
+    await message.edit("Here is repo: \n\n\nhttps://t.me/V_VIP_OWNER\nFork & Give an ⭐")
 
 
 @Client.on_message(filters.command("creator", ".") & filters.me)
 async def creator(bot: Client, message: Message):
-    await message.edit("https://gitHub.com/itzshukla")
+    await message.edit("https://t.me/V_VIP_OWNER")
 
 
 @Client.on_message(filters.command(["uptime", "up"], ".") & filters.me)
