@@ -31,7 +31,7 @@ async def adminlist(client: Client, message: Message):
         except:
             nama = a.user.first_name
         if nama is None:
-            nama = "☠️ Deleted account"
+            nama = "❍ ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛ"
         if a.status == enums.ChatMemberStatus.ADMINISTRATOR:
             if a.user.is_bot:
                 badmin.append(mention_markdown(a.user.id, nama))
@@ -42,29 +42,29 @@ async def adminlist(client: Client, message: Message):
     admin.sort()
     badmin.sort()
     totaladmins = len(creator) + len(admin) + len(badmin)
-    teks = "**Admins in {}**\n".format(grup.title)
-    teks += "╒═══「 Creator 」\n"
+    teks = "**ᴀᴅᴍɪɴ ɪɴ {}**\n".format(grup.title)
+    teks += "╒═══「 ᴏᴡɴᴇʀ 」\n"
     for x in creator:
         teks += "│ • {}\n".format(x)
         if len(teks) >= 4096:
             await message.reply(message.chat.id, teks, reply_to_message_id=replyid)
             teks = ""
             toolong = True
-    teks += "╞══「 {} Human Administrator 」\n".format(len(admin))
+    teks += "╞══「 {} ʜᴜᴍᴀɴ ᴀᴅᴍᴜɴɪsᴛʀᴀᴛᴏʀ 」\n".format(len(admin))
     for x in admin:
         teks += "│ • {}\n".format(x)
         if len(teks) >= 4096:
             await message.reply(message.chat.id, teks, reply_to_message_id=replyid)
             teks = ""
             toolong = True
-    teks += "╞══「 {} Bot Administrator 」\n".format(len(badmin))
+    teks += "╞══「 {} ʙᴏᴛ ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀ 」\n".format(len(badmin))
     for x in badmin:
         teks += "│ • {}\n".format(x)
         if len(teks) >= 4096:
             await message.reply(message.chat.id, teks, reply_to_message_id=replyid)
             teks = ""
             toolong = True
-    teks += "╘══「 Total {} Admins 」".format(totaladmins)
+    teks += "╘══「 ᴛᴏᴛᴀʟ {} ᴀᴅᴍɪɴ 」".format(totaladmins)
     if toolong:
         await message.reply(message.chat.id, teks, reply_to_message_id=replyid)
     else:
@@ -126,7 +126,7 @@ async def tag_all_users(client: Client, message: Message):
     if len(message.text.split()) >= 2:
         text = message.text.split(None, 1)[1]
     else:
-        text = "Hi all 🙃"
+        text = "ʜᴇʏ ᴀʟʟ 🙃"
     kek = client.get_chat_members(message.chat.id)
     async for a in kek:
         if not a.user.is_bot:
@@ -163,14 +163,14 @@ async def get_list_bots(client: Client, message: Message):
         except:
             nama = a.user.first_name
         if nama is None:
-            nama = "☠️ Deleted account"
+            nama = "❍ ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛ"
         if a.user.is_bot:
             bots.append(mention_markdown(a.user.id, nama))
-    teks = "**All bots in group {}**\n".format(grup.title)
-    teks += "╒═══「 Bots 」\n"
+    teks = "**ᴀʟʟ ʙᴏᴛs ɪɴ ɢʀᴏᴜᴘ {}**\n".format(grup.title)
+    teks += "╒═══「 ʙᴏᴛs 」\n"
     for x in bots:
         teks += "│ • {}\n".format(x)
-    teks += "╘══「 Total {} Bots 」".format(len(bots))
+    teks += "╘══「 ᴛᴏᴛᴀʟ {} ʙᴏᴛs 」".format(len(bots))
     if replyid:
         await client.send_message(message.chat.id, teks, reply_to_message_id=replyid)
     else:
@@ -180,15 +180,15 @@ async def get_list_bots(client: Client, message: Message):
 add_command_help(
     "tag",
     [
-        [f".admins", "Get chats Admins list."],
-        [f".kickdel or .zombies", "To Kick deleted Accounts."],
+        [f"❍ ᴀᴅᴍɪɴs", "ɢᴇᴛ ᴄʜᴀᴛs ᴀᴅᴍɪɴ ʟɪsᴛ"],
+        [f"❍ ᴋɪᴄᴋᴅᴇʟ ᴏʀ ᴢᴏᴍʙɪᴇs", "ᴛᴏ ᴋɪᴄᴋ ᴅᴇʟᴇᴛᴇᴅ ᴀᴄᴄᴏᴜɴᴛs"],
         [
-            f".everyone `or` .mentionall",
-            "to mention Everyone ",
+            f"❍ ᴇᴠᴇʀʏᴏɴᴇ `ᴏʀ` ᴍᴇɴᴛɪᴏɴᴀʟʟ",
+            "ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴇᴠᴇʀʏᴏɴᴇ",
         ],
         [
-            f".botlist",
-            "To get Chats Bots list",
+            f"❍ ʙᴏᴛʟɪsᴛ",
+            "ᴛᴏ ɢᴇᴛ ᴄʜᴀᴛs ʙᴏᴛs ʟɪsᴛ",
         ],
     ],
 )
