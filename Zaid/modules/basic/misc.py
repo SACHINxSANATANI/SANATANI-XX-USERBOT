@@ -11,27 +11,27 @@ from Zaid.helper.PyroHelpers import ReplyCheck
 from Zaid.modules.help import add_command_help
 from Zaid.modules.bot.inline import get_readable_time
 
-alive_logo = ALIVE_PIC or "https://telegra.ph/file/d1ad21c212a7758d56cdf.jpg"
+alive_logo = ALIVE_PIC or "https://telegra.ph/file/0fbd73bd363cd7e2240df.jpg"
 
 if ALIVE_TEXT:
    txt = ALIVE_TEXT
 else:
     txt = (
         f"** 𝗦𝝙𝗡𝝙𝗧𝝙𝗡𝗜 || 𝗦𝗣𝝙𝗠​ **\n\n"
-        f"❏ **ᴠᴇʀsɪᴏɴ**: `2.1`\n"
-        f"├• **ᴜᴘᴛɪᴍᴇ**: `{str(datetime.now() - START_TIME).split('.')[0]}`\n"
-        f"├• **ᴘʏᴛʜᴏɴ**: `{python_version()}`\n"
-        f"├• **ᴘʏʀᴏɢʀᴀᴍ**: `{__version__}`\n"
-        f"├• **sᴜᴘᴘᴏʀᴛ-ᴄʜᴀᴛ**: [4sᴛ ғɪɢʜᴛᴇʀ](t.me/Il_4ST_FIGHTER_ll)\n"
-        f"├• **ᴜᴘᴅᴀᴛᴇs**: [🇸ᴀ ɴ ᴀ ᴛ ᴀ ɴ ɪ ₰](t.me/ALL_SANATANI_BOT)\n"
-        f"└• **sɪʀ**: [sᴀᴄʜɪɴ](t.me/V_VIP_OWNER)"        
+        f"❖ **ᴠᴇʀsɪᴏɴ**: `2.1`\n"
+        f"❖ **ᴜᴘᴛɪᴍᴇ**: `{str(datetime.now() - START_TIME).split('.')[0]}`\n"
+        f"❖ **ᴘʏᴛʜᴏɴ**: `{python_version()}`\n"
+        f"❖ **ᴘʏʀᴏɢʀᴀᴍ**: `{__version__}`\n"
+        f"❖ **sᴜᴘᴘᴏʀᴛ-ᴄʜᴀᴛ**: [4sᴛ ғɪɢʜᴛᴇʀ](t.me/Il_4ST_FIGHTER_ll)\n"
+        f"❖ **ᴜᴘᴅᴀᴛᴇs**: [🇸ᴀ ɴ ᴀ ᴛ ᴀ ɴ ɪ ₰](t.me/ALL_SANATANI_BOT)\n"
+        f"❖ **sɪʀ**: [sᴀᴄʜɪɴ](t.me/V_VIP_OWNER)"        
     )
 
 @Client.on_message(
     filters.command(["alive", "sachin"], ".") & (filters.me | filters.user(SUDO_USER))
 )
 async def alive(client: Client, message: Message):
-    xx = await message.reply_text("⚡️")
+    xx = await message.reply_text("🤍️")
     try:
        await message.delete()
     except:
@@ -53,7 +53,7 @@ async def alive(client: Client, message: Message):
 
 @Client.on_message(filters.command("ISISISISISrepo", ".") & filters.me)
 async def repo(bot: Client, message: Message):
-    await message.edit("⚡, 💘, ❄, ✨")
+    await message.edit("🤍, 💛, 🧡, ❤️")
     await asyncio.sleep(1)
     await message.edit("Fetching Source Code.....")
     await asyncio.sleep(1)
@@ -69,7 +69,7 @@ async def creator(bot: Client, message: Message):
 async def uptime(bot: Client, message: Message):
     now = datetime.now()
     current_uptime = now - START_TIME
-    await message.edit(f"Uptime ⚡\n" f"```{str(current_uptime).split('.')[0]}```")
+    await message.edit(f"❖ ᴜᴘᴛɪᴍᴇ ️\n" f"```{str(current_uptime).split('.')[0]}```")
 
 
 @Client.on_message(filters.command("id", ".") & filters.me)
