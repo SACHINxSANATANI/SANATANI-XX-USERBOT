@@ -20,10 +20,10 @@ async def hello(client: app, message):
               ],
               [
                   InlineKeyboardButton("◎ sᴜᴘᴘᴏʀᴛ ️◎️", url="https://t.me/Il_4ST_FIGHTER_lI"),
-                  InlineKeyboardButton("◎ ᴜᴘᴅᴀᴛᴇs ️◎️", url="https://t.me/V_VIP_OWNER"),
+                  InlineKeyboardButton("◎ ᴜᴘᴅᴀᴛᴇs ️◎️", url="https://t.me/ALL_SANATANI_BOT"),
               ],
               [
-                  InlineKeyboardButton("◎ ᴀʟʟʙᴏᴛ ️◎️", url="https://t.me/Il_4ST_FIGHTER_lI"),
+                  InlineKeyboardButton("◎ ʀᴇᴘᴏ ️◎️", url="https://t.me/Il_4ST_FIGHTER_lI"),
                   InlineKeyboardButton("◎ sᴀᴄʜɪɴ ️◎️", url="https://t.me/V_VIP_OWNER"),
               ],
               ]
