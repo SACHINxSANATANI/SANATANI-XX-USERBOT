@@ -7,7 +7,7 @@ from ... import app, SUDO_USER
 from ... import *
 from cache.data import OneWord
 
-
+ 
 FC = 2
 
 
