@@ -11,7 +11,7 @@ from cache.data import OneWord
 FC = 2
 
 
-@app.on_message(cdz(["randi"])  & (filters.me | filters.user(SUDO_USER)))
+@app.on_message(filters.command(["randi"])  & (filters.me | filters.user(SUDO_USER)))
 async def alt_lol(xspam: Client, message: Message):    
     chat_id = message.chat.id
     RUSH = None
@@ -27,7 +27,7 @@ async def alt_lol(xspam: Client, message: Message):
 
 
 
-@app.on_message(cdz(["rrandi"])  & (filters.me | filters.user(SUDO_USER)))
+@app.on_message(filters.command(["rrandi"])  & (filters.me | filters.user(SUDO_USER)))
 async def alt_mkc(xspam: Client, message: Message):    
     chat_id = message.chat.id
     RUSH = None
