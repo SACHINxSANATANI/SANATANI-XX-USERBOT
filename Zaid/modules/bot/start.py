@@ -9,7 +9,7 @@ from pyrogram import *
 from pyrogram.types import * 
 
 PHONE_NUMBER_TEXT = (
-    "•──────────────────────•\n❍ 𝗛𝗘𝗬 ‣ 𝗠𝗬 𝗗𝗘𝗔𝗥 𝗨𝗦𝗘𝗥\n•──────────────────────•\n❍ 𝗜 𝗔𝗠 ‣ ‌ ‌𝗨𝗦𝝣𝗥𝗕𝚯𝗧 || 𝗕𝚯𝗧\n•──────────────────────•\n⦿ ғɪʀᴀᴛ ɢᴏ ᴛʜɪs ʙᴏᴛ [sᴇssɪᴏɴ-ʙᴏᴛ](https://t.me/SESSIONxGENxBOT)\n⦿ ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ ᴠ1\n⦿ ᴛʜᴇɴ ᴄᴏᴍᴇ ʙᴀᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴛʜɪs ʙᴏᴛ\n⦿ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴛʜɪs ᴜsʀʙᴏᴛ....\n⦿ /clone (Save Message Code)\n•──────────────────────•\n           [❖ │ sᴀɴᴀᴛᴀɴɪ ꭙ ʙᴏᴛ │ ❖](https://t.me/all_sanatani_bot)\n•──────────────────────•"
+    "**╭────── ˹ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ˼ ⏤͟͟͞͞★**/n**┊◍ ʜᴇʏ : ᴍʏ ᴅᴇᴀʀ ᴜsᴇʀ**/n**┆◍ ɪ ᴀᴍ : [𝛅ʌηʌᴛʌηɪ ꭙ 𝐔sᴇꝛвσᴛ](https://t.me/SANATANI_X_ROBOT) **/n**┊**/n**┆● Sᴀɴᴀᴛᴀɴɪ Bᴏᴛ Vᴇʀsɪᴏɴ :** `2.1.3`/n**┊● Pᴏᴡᴇʀғᴜʟ & Usᴇғᴜʟ Usᴇʀʙᴏᴛ**/n**╰─────────────────────────**/n**──────────────────────────**/n**❖ Hᴏᴡ Tᴏ Usᴇ Tʜɪs Bᴏᴛ - [Cʟɪᴄᴋ Hᴇʀᴇ](https://t.me/All_SANATANI_BOT/132) **/n**──────────────────────────**/n**❖ Sᴇssɪᴏɴs Gᴇɴ Bᴏᴛ ⁚ [Sᴇssɪᴏɴ-Bᴏᴛ](https://t.me/SESSIONxGENxBOT) **/n**──────────────────────────**/n**❖ Cʟᴏɴᴇ Bᴏᴛ  ⁚ /clone [ Sᴛʀɪɴɢ Sᴇssɪᴏɴ ]**/n**──────────────────────────**/n**❖ Uᴘᴅᴀᴛᴇ ⏤͟͟͞͞  [❖ ∣ 𝛅ᴀɴᴀᴛᴀɴɪ Tᴇᴄի ∣ ❖](https://t.me/All_SANATANI_BOT) **/n**──────────────────────────**"
 )
 
 @app.on_message(filters.command("start"))
@@ -19,12 +19,14 @@ async def hello(client: app, message):
                   InlineKeyboardButton(text="🍁 sᴇssɪᴏɴ ɢᴇɴ ʙᴏᴛ 🍁️", url="https://t.me/SESSIONxGENxBOT"),
               ],
               [
-                  InlineKeyboardButton("💫 sᴀᴄʜɪɴ️", url="https://t.me/SACHIN_OWNER"),
-                  InlineKeyboardButton("ʀᴇᴘᴏ ✨️", url="https://t.me/+cW07X2RM_IBmYTI1"),
+                  InlineKeyboardButton(text="🌿 ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ 🌿", url="https://t.me/All_SANATANI_BOT/132"),
               ],
               [
-                  InlineKeyboardButton("🌹 sᴜᴘᴘᴏʀᴛ️", url="https://t.me/+cW07X2RM_IBmYTI1"),
-                  InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs 🌸️", url="https://t.me/ALL_SANATANI_BOT"),
+                  InlineKeyboardButton("🦋⃟‌🇸ʌᷟᴄᷣʜɪ֟፝η 🌸", url="https://t.me/SACHIN_OWNER"),
+                  InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ ❄️️️", url="https://t.me/ALL_SANATANI_BOT"),
+              ],
+              [
+                  InlineKeyboardButton("⛈️ ʙᴏᴛ ꜱᴛᴀᴛᴜꜱ ᴀɴᴅ ᴍᴏʀᴇ ʙᴏᴛꜱ ⛈️", url="https://t.me/All_SANATANI_BOT/324"),
               ],
               ]
     reply_markup = InlineKeyboardMarkup(buttons)
