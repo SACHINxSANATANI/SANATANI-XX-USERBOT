@@ -1,4 +1,4 @@
-from random import choice
+import random
 from pyrogram import filters, Client
 from pyrogram.types import Message
 from Zaid import SUDO_USER
