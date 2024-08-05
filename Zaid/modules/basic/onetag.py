@@ -48,7 +48,7 @@ async def mentionall(client: Client, message: Message):
         pass
 
 
-@Client.on_message(filters.command("cancel", ".") & filters.me)
+@Client.on_message(filters.command("stop", ".") & filters.me)
 async def cancel_spam(client: Client, message: Message):
     if not message.chat.id in spam_chats:
         return await message.edit("**It seems there is no tagall here.**")
